@@ -4,7 +4,6 @@ function formsubmit(){
     let firstName = formData.get("firstName");
     let lastName = formData.get("lastName");
     let inputAddress = formData.get("inputAddress");
-    // let inputAddress2 = formData.get("inputAddress2");
     let pincode = formData.get("pincode");
     let gender = formData.get("gender");
     let food = formData.getAll("food");
@@ -18,8 +17,6 @@ function formsubmit(){
         let tr = createElement("tr");
         let tdFirstName = createElement("td",firstName);
         let tdLastName = createElement("td",lastName);
-        // if(inputAddress2.length !== 0)
-        //     inputAddress1 = inputAddress1 + ", " + inputAddress2;
         let tdAddress = createElement("td",inputAddress);
         let tdPinccode = createElement("td",pincode);
         let tdGender = createElement("td",gender);
